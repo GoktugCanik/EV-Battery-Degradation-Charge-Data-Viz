@@ -6,49 +6,51 @@ The goal is to understand how operational factors such as charging cycles, tempe
 
 ---
 
-## 📊 Project Objectives
+## Project Objectives
 
-- Analyze battery degradation trends over time
-- Identify key factors affecting battery health
-- Visualize relationships between operational variables
-- Explore vehicle-level differences in performance
-
----
-
-## 🛠️ Tools & Technologies
-
-- Python
-- Pandas
-- Matplotlib
-- Seaborn
+- Analyze battery degradation trends over time  
+- Identify key factors affecting battery health  
+- Visualize relationships between operational variables  
+- Explore vehicle-level differences in performance  
 
 ---
 
-## 📁 Dataset Features
+## Tools & Technologies
 
-The dataset includes information such as:
-
-- Total Charging Cycles
-- Internal Resistance
-- Average Temperature
-- Driving Style
-- Battery Type
-- Car Model
-- State of Health (SOH %)
-- Battery Status
+- Python  
+- Pandas  
+- Matplotlib  
+- Seaborn  
 
 ---
 
-## 📊 Data Visualizations
+## Dataset Features
+
+The dataset includes the following variables:
+
+- Total Charging Cycles  
+- Internal Resistance  
+- Average Temperature  
+- Driving Style  
+- Battery Type  
+- Car Model  
+- State of Health (SOH %)  
+- Battery Status  
+
+---
+
+## Data Visualizations
 
 ### 1. Charging Cycles vs State of Health
-Shows how battery health decreases as charging cycles increase.
+
+Shows how battery health changes as charging cycles increase.
 
 ![Charging Cycles](graphs/1_charging_cycles_vs_soh_advanced.png)
 
 ---
 
 ### 2. Internal Resistance vs State of Health
+
 Higher internal resistance is generally associated with lower battery health.
 
 ![Internal Resistance](graphs/2_internal_resistance_vs_soh.png)
@@ -56,6 +58,7 @@ Higher internal resistance is generally associated with lower battery health.
 ---
 
 ### 3. Battery Type Distribution (SOH Density)
+
 Comparison of battery health across different battery types.
 
 ![Battery Type](graphs/3_soh_density_by_battery_type.png)
@@ -63,13 +66,15 @@ Comparison of battery health across different battery types.
 ---
 
 ### 4. Driving Style vs State of Health
-Aggressive driving behavior may contribute to faster degradation.
+
+Driving behavior effects on battery degradation.
 
 ![Driving Style](graphs/4_driving_style_vs_soh.png)
 
 ---
 
 ### 5. Car Model vs State of Health
+
 Comparison of battery performance across different EV models.
 
 ![Car Model](graphs/5_car_model_vs_soh_sorted.png)
@@ -77,30 +82,41 @@ Comparison of battery performance across different EV models.
 ---
 
 ### 6. Operational Factors Overview
-Combined analysis of multiple operational variables.
+
+Multi-variable analysis of operational effects on battery health.
 
 ![Operational Factors](graphs/6_operational_factors_grid.png)
 
 ---
 
 ### 7. Correlation Heatmap
-Shows relationships between all numerical variables in the dataset.
+
+Relationships between all numerical variables in the dataset.
 
 ![Correlation Heatmap](graphs/7_correlation_heatmap_polished.png)
 
 ---
 
-## 📌 Key Insights
+## Key Insights
 
-- Charging cycles have a strong negative correlation with battery health.
-- Higher internal resistance indicates battery degradation.
-- Temperature and driving behavior also influence SOH.
-- Different car models show varying degradation patterns.
+- Charging cycles have a strong negative relationship with battery health  
+- Internal resistance increases as battery degrades  
+- Temperature and driving style influence SOH  
+- Battery performance varies across vehicle models  
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
-1. Clone the repository:
-```bash
+Clone the repository:
+
 git clone https://github.com/your-username/ev-battery-analysis.git
+
+Install dependencies:
+
+pip install pandas matplotlib seaborn
+
+Run the script:
+
+python main.py
+
